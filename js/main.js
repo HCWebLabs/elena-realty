@@ -44,8 +44,7 @@
         init() {
             if (!this.el) return;
             
-            // Hide loader after content loads
-            window.addEventListener('load', () => {
+            const hideLoader = () => {
                 setTimeout(() => {
                     this.el.classList.add('is-hidden');
                     document.body.classList.remove('scroll-locked');
@@ -54,8 +53,20 @@
                     setTimeout(() => {
                         this.el.remove();
                     }, 500);
-                }, 800);
-            });
+                }, 600);
+            };
+            
+            // Hide loader when page is ready
+            if (document.readyState === 'complete') {
+                // Already loaded
+                hideLoader();
+            } else {
+                // Wait for load, but with a safety timeout
+                window.addEventListener('load', hideLoader);
+                
+                // Fallback: hide after 3 seconds max regardless
+                setTimeout(hideLoader, 3000);
+            }
             
             // Lock scroll while loading
             document.body.classList.add('scroll-locked');
