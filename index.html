@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elena Vance — Architectural Property Specialist in Ashford Valley. Curating design-forward homes for considered living.">
+    
+    <title>Elena Vance | Architectural Property Specialist</title>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+</head>
+<body>
+    <!-- Custom Cursor (desktop only) -->
+    <div class="cursor" aria-hidden="true">
+        <div class="cursor__dot"></div>
+        <div class="cursor__ring"></div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loader" aria-hidden="true">
+        <div class="loader__content">
+            <span class="loader__monogram">EV</span>
+            <div class="loader__bar"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header__inner">
+            <a href="#" class="header__logo" aria-label="Elena Vance Home">
+                <span class="header__monogram">EV</span>
+                <span class="header__name">Elena Vance</span>
+            </a>
+            
+            <nav class="header__nav" role="navigation" aria-label="Main navigation">
+                <ul class="header__nav-list">
+                    <li><a href="#properties" class="header__nav-link">Properties</a></li>
+                    <li><a href="#approach" class="header__nav-link">Approach</a></li>
+                    <li><a href="#ashford-valley" class="header__nav-link">Ashford Valley</a></li>
+                    <li><a href="#about" class="header__nav-link">About</a></li>
+                    <li><a href="#contact" class="header__nav-link header__nav-link--cta">Get in Touch</a></li>
+                </ul>
+            </nav>
+            
+            <button class="header__menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="header__menu-line"></span>
+                <span class="header__menu-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <nav class="mobile-menu__nav" role="navigation" aria-label="Mobile navigation">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item"><a href="#properties" class="mobile-menu__link">Properties</a></li>
+                <li class="mobile-menu__item"><a href="#approach" class="mobile-menu__link">Approach</a></li>
+                <li class="mobile-menu__item"><a href="#ashford-valley" class="mobile-menu__link">Ashford Valley</a></li>
+                <li class="mobile-menu__item"><a href="#about" class="mobile-menu__link">About</a></li>
+                <li class="mobile-menu__item"><a href="#contact" class="mobile-menu__link">Get in Touch</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu__footer">
+            <a href="tel:+15551234567" class="mobile-menu__contact">+1 (555) 123-4567</a>
+            <a href="/cdn-cgi/l/email-protection#d1b4bdb4bfb091b4bdb4bfb0a7b0bfb2b4ffb2bebc" class="mobile-menu__contact"><span class="__cf_email__" data-cfemail="40252c252e2100252c252e2136212e23256e232f2d">[email&#160;protected]</span></a>
+        </div>
+    </div>
+
+    <main role="main">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero__background">
+                <img 
+                    src="assets/images/hero-home.svg" 
+                    alt="Modern architectural home with floor-to-ceiling windows at dusk" 
+                    class="hero__image"
+                    loading="eager"
+                >
+                <div class="hero__overlay"></div>
+            </div>
+            
+            <div class="hero__content">
+                <p class="hero__tagline reveal">Architectural Property Specialist</p>
+                <h1 id="hero-heading" class="hero__heading reveal">
+                    <span class="hero__heading-line">Architecture,</span>
+                    <span class="hero__heading-line">meet life.</span>
+                </h1>
+                <p class="hero__subtitle reveal">Curating design-forward homes in Ashford Valley for those who understand that where you live shapes how you live.</p>
+                <div class="hero__cta reveal">
+                    <a href="#properties" class="btn btn--primary">View Properties</a>
+                    <a href="#contact" class="btn btn--ghost">Schedule a Consultation</a>
+                </div>
+            </div>
+            
+            <div class="hero__scroll" aria-hidden="true">
+                <span class="hero__scroll-text">Scroll</span>
+                <div class="hero__scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- Philosophy / Approach Section -->
+        <section class="approach" id="approach" aria-labelledby="approach-heading">
+            <div class="approach__inner container">
+                <header class="approach__header">
+                    <span class="section-label reveal">The Approach</span>
+                    <h2 id="approach-heading" class="approach__heading reveal">
+                        Real estate, when done thoughtfully, is about understanding the relationship between people and space.
+                    </h2>
+                </header>
+                
+                <div class="approach__content">
+                    <div class="approach__text reveal">
+                        <p>After twelve years of matching discerning clients with exceptional architecture, I've learned that a home is more than square footage and amenities. It's about sightlines that calm you. Materials that age beautifully. Spaces that accommodate both solitude and gathering.</p>
+                        <p>My background in interior design taught me to see what others overlook—the way morning light will move through a room, how a floor plan supports daily rituals, why one space feels like a sanctuary and another never quite does.</p>
+                    </div>
+                    <div class="approach__values reveal">
+                        <div class="approach__value">
+                            <span class="approach__value-number">01</span>
+                            <h3 class="approach__value-title">Design Literacy</h3>
+                            <p class="approach__value-text">I speak the language of architects and builders. When representing a property, I understand and communicate its design intent.</p>
+                        </div>
+                        <div class="approach__value">
+                            <span class="approach__value-number">02</span>
+                            <h3 class="approach__value-title">Curated Access</h3>
+                            <p class="approach__value-text">Relationships built over a decade mean early access to exceptional properties, often before they reach the market.</p>
+                        </div>
+                        <div class="approach__value">
+                            <span class="approach__value-number">03</span>
+                            <h3 class="approach__value-title">Considered Matches</h3>
+                            <p class="approach__value-text">I'd rather find you the right home than any home. Patience and precision over pressure and volume.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Properties Section -->
+        <section class="properties" id="properties" aria-labelledby="properties-heading">
+            <header class="properties__header container">
+                <span class="section-label reveal">Featured Properties</span>
+                <h2 id="properties-heading" class="properties__heading reveal">Currently Available</h2>
+                <p class="properties__intro reveal">A selection of exceptional homes, each chosen for architectural significance and livability.</p>
+            </header>
+            
+            <div class="properties__grid">
+                <!-- Property 1 -->
+                <article class="property-card reveal" data-property="mitchell">
+                    <div class="property-card__image-wrap">
+                        <img 
+                            src="assets/images/property-1.svg" 
+                            alt="Mid-century modern home with expansive glass walls and natural wood exterior" 
+                            class="property-card__image"
+                            loading="lazy"
+                        >
+                        <span class="property-card__status">Active</span>
+                    </div>
+                    <div class="property-card__content">
+                        <span class="property-card__location">Ridgewood Hills</span>
+                        <h3 class="property-card__title">The Mitchell Residence</h3>
+                        <p class="property-card__specs">4 Bed · 3 Bath · 3,200 sqft · 0.8 Acres</p>
+                        <p class="property-card__price">$1,450,000</p>
+                        <button class="property-card__btn" aria-label="View details for The Mitchell Residence" data-modal="mitchell">
+                            View Property
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Property 2 -->
+                <article class="property-card reveal" data-property="laurel">
+                    <div class="property-card__image-wrap">
+                        <img 
+                            src="assets/images/property-2.svg" 
+                            alt="Contemporary concrete and glass home nestled into hillside" 
+                            class="property-card__image"
+                            loading="lazy"
+                        >
+                        <span class="property-card__status">Active</span>
+                    </div>
+                    <div class="property-card__content">
+                        <span class="property-card__location">Laurel Canyon</span>
+                        <h3 class="property-card__title">Cantilever House</h3>
+                        <p class="property-card__specs">3 Bed · 2.5 Bath · 2,800 sqft · 1.2 Acres</p>
+                        <p class="property-card__price">$1,875,000</p>
+                        <button class="property-card__btn" aria-label="View details for Cantilever House" data-modal="laurel">
+                            View Property
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Property 3 -->
+                <article class="property-card reveal" data-property="oak">
+                    <div class="property-card__image-wrap">
+                        <img 
+                            src="assets/images/property-3.svg" 
+                            alt="Restored 1960s post-and-beam home with original details" 
+                            class="property-card__image"
+                            loading="lazy"
+                        >
+                        <span class="property-card__status">Coming Soon</span>
+                    </div>
+                    <div class="property-card__content">
+                        <span class="property-card__location">Oak Hollow</span>
+                        <h3 class="property-card__title">The Pemberton</h3>
+                        <p class="property-card__specs">5 Bed · 4 Bath · 4,100 sqft · 2.1 Acres</p>
+                        <p class="property-card__price">$2,250,000</p>
+                        <button class="property-card__btn" aria-label="View details for The Pemberton" data-modal="oak">
+                            View Property
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Property 4 -->
+                <article class="property-card reveal" data-property="meadow">
+                    <div class="property-card__image-wrap">
+                        <img 
+                            src="assets/images/property-4.svg" 
+                            alt="Minimalist single-story home with courtyard and reflecting pool" 
+                            class="property-card__image"
+                            loading="lazy"
+                        >
+                        <span class="property-card__status">Active</span>
+                    </div>
+                    <div class="property-card__content">
+                        <span class="property-card__location">Meadow Bend</span>
+                        <h3 class="property-card__title">Courtyard Residence</h3>
+                        <p class="property-card__specs">3 Bed · 3 Bath · 2,400 sqft · 0.6 Acres</p>
+                        <p class="property-card__price">$1,125,000</p>
+                        <button class="property-card__btn" aria-label="View details for Courtyard Residence" data-modal="meadow">
+                            View Property
+                        </button>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="properties__footer container reveal">
+                <p>Looking for something specific? I often have access to properties before they're publicly listed.</p>
+                <a href="#contact" class="btn btn--secondary">Discuss Your Search</a>
+            </div>
+        </section>
+
+        <!-- Neighborhood / Area Section -->
+        <section class="neighborhood" id="ashford-valley" aria-labelledby="neighborhood-heading">
+            <div class="neighborhood__hero">
+                <img 
+                    src="assets/images/ashford-valley.svg" 
+                    alt="Panoramic view of Ashford Valley with rolling hills and scattered homes" 
+                    class="neighborhood__hero-image"
+                    loading="lazy"
+                >
+                <div class="neighborhood__hero-overlay"></div>
+                <div class="neighborhood__hero-content">
+                    <span class="section-label section-label--light reveal">The Area</span>
+                    <h2 id="neighborhood-heading" class="neighborhood__heading reveal">Ashford Valley</h2>
+                    <p class="neighborhood__tagline reveal">Where architecture meets landscape.</p>
+                </div>
+            </div>
+            
+            <div class="neighborhood__content container">
+                <div class="neighborhood__intro reveal">
+                    <p>Ashford Valley has quietly become one of the most sought-after addresses for those who value architectural integrity and natural beauty. Originally developed in the 1950s and 60s by a consortium of progressive builders, the area attracted architects who wanted to experiment with modern residential design.</p>
+                    <p>Today, you'll find an extraordinary concentration of mid-century originals alongside thoughtfully designed contemporary homes—all set against rolling hills, mature oak groves, and some of the most striking vistas in the region.</p>
+                </div>
+                
+                <div class="neighborhood__stats reveal">
+                    <div class="neighborhood__stat">
+                        <span class="neighborhood__stat-value">47</span>
+                        <span class="neighborhood__stat-label">Architect-Designed Homes</span>
+                    </div>
+                    <div class="neighborhood__stat">
+                        <span class="neighborhood__stat-value">12</span>
+                        <span class="neighborhood__stat-label">Historic Designations</span>
+                    </div>
+                    <div class="neighborhood__stat">
+                        <span class="neighborhood__stat-value">98%</span>
+                        <span class="neighborhood__stat-label">Owner Occupied</span>
+                    </div>
+                    <div class="neighborhood__stat">
+                        <span class="neighborhood__stat-value">4.2</span>
+                        <span class="neighborhood__stat-label">Acres Average Lot</span>
+                    </div>
+                </div>
+                
+                <div class="neighborhood__features">
+                    <div class="neighborhood__feature reveal">
+                        <img 
+                            src="assets/images/neighborhood-1.svg" 
+                            alt="Tree-lined road winding through Ashford Valley" 
+                            class="neighborhood__feature-image"
+                            loading="lazy"
+                        >
+                        <h3 class="neighborhood__feature-title">Preserved Character</h3>
+                        <p class="neighborhood__feature-text">Strict architectural guidelines protect the area's design heritage while allowing for thoughtful contemporary additions.</p>
+                    </div>
+                    <div class="neighborhood__feature reveal">
+                        <img 
+                            src="assets/images/neighborhood-2.svg" 
+                            alt="Local coffee shop with modern interior" 
+                            class="neighborhood__feature-image"
+                            loading="lazy"
+                        >
+                        <h3 class="neighborhood__feature-title">Village Center</h3>
+                        <p class="neighborhood__feature-text">A walkable core with locally-owned restaurants, a renowned coffee roaster, and a weekly farmers market.</p>
+                    </div>
+                    <div class="neighborhood__feature reveal">
+                        <img 
+                            src="assets/images/neighborhood-3.svg" 
+                            alt="Hiking trail through oak woodland" 
+                            class="neighborhood__feature-image"
+                            loading="lazy"
+                        >
+                        <h3 class="neighborhood__feature-title">Open Space</h3>
+                        <p class="neighborhood__feature-text">Over 2,000 acres of protected land with hiking trails, seasonal creeks, and wildlife corridors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lead Magnet / Resources Section -->
+        <section class="resources" id="resources" aria-labelledby="resources-heading">
+            <div class="resources__inner container">
+                <div class="resources__content reveal">
+                    <span class="section-label">Free Resource</span>
+                    <h2 id="resources-heading" class="resources__heading">The Considered Buyer's Guide</h2>
+                    <p class="resources__text">A 20-page guide for design-conscious buyers navigating the architectural home market. Includes questions to ask about construction quality, how to evaluate a mid-century restoration, working with architects on modifications, and what to look for in a home inspection beyond the basics.</p>
+                    <ul class="resources__list">
+                        <li>Evaluating architectural integrity</li>
+                        <li>Understanding construction eras and methods</li>
+                        <li>Questions for sellers and listing agents</li>
+                        <li>Working with preservation guidelines</li>
+                    </ul>
+                </div>
+                <div class="resources__form-wrap reveal">
+                    <form class="resources__form" id="guide-form" action="php/guide-download.php" method="POST">
+                        <h3 class="resources__form-title">Download the Guide</h3>
+                        <div class="form-group">
+                            <label for="guide-name" class="form-label">Name</label>
+                            <input 
+                                type="text" 
+                                id="guide-name" 
+                                name="name" 
+                                class="form-input" 
+                                required
+                                autocomplete="name"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="guide-email" class="form-label">Email</label>
+                            <input 
+                                type="email" 
+                                id="guide-email" 
+                                name="email" 
+                                class="form-input" 
+                                required
+                                autocomplete="email"
+                            >
+                        </div>
+                        <div class="form-group form-group--checkbox">
+                            <input 
+                                type="checkbox" 
+                                id="guide-updates" 
+                                name="updates" 
+                                class="form-checkbox"
+                            >
+                            <label for="guide-updates" class="form-label form-label--checkbox">Send me occasional updates on new listings and market insights</label>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Get the Guide</button>
+                        <p class="resources__form-note">Your information is never shared. Unsubscribe anytime.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+            <div class="testimonials__inner container">
+                <header class="testimonials__header">
+                    <span class="section-label reveal">Client Experiences</span>
+                    <h2 id="testimonials-heading" class="sr-only">Testimonials</h2>
+                </header>
+                
+                <div class="testimonials__slider" role="region" aria-label="Testimonial carousel">
+                    <div class="testimonials__track">
+                        <blockquote class="testimonial reveal">
+                            <p class="testimonial__quote">"Elena understood what we were looking for before we could articulate it ourselves. She showed us three homes. We bought the second one. That kind of precision is rare."</p>
+                            <footer class="testimonial__footer">
+                                <cite class="testimonial__author">Sarah & Michael T.</cite>
+                                <span class="testimonial__detail">Purchased in Ridgewood Hills</span>
+                            </footer>
+                        </blockquote>
+                        
+                        <blockquote class="testimonial reveal">
+                            <p class="testimonial__quote">"As an architect, I'm particular about how my properties are represented. Elena is one of the few agents I trust to communicate design intent to potential buyers."</p>
+                            <footer class="testimonial__footer">
+                                <cite class="testimonial__author">David Chen, AIA</cite>
+                                <span class="testimonial__detail">Architect, Chen Studio</span>
+                            </footer>
+                        </blockquote>
+                        
+                        <blockquote class="testimonial reveal">
+                            <p class="testimonial__quote">"We'd been searching for two years with other agents. Elena found us a pocket listing in our first month working together. The home hadn't been on the market in forty years."</p>
+                            <footer class="testimonial__footer">
+                                <cite class="testimonial__author">James & Robert K.</cite>
+                                <span class="testimonial__detail">Purchased in Oak Hollow</span>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about" aria-labelledby="about-heading">
+            <div class="about__inner">
+                <div class="about__image-wrap reveal">
+                    <img 
+                        src="assets/images/elena-portrait.svg" 
+                        alt="Elena Vance, professional portrait" 
+                        class="about__image"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="about__content">
+                    <span class="section-label reveal">About</span>
+                    <h2 id="about-heading" class="about__heading reveal">Elena Vance</h2>
+                    <div class="about__text reveal">
+                        <p>I came to real estate through design. After studying interior architecture and spending my early career staging homes, I realized I was more interested in the architecture itself—and in connecting people with spaces that would genuinely serve their lives.</p>
+                        <p>Twelve years later, I've built a practice focused exclusively on design-forward properties. I work with buyers who care about craftsmanship, sellers who want their homes represented with integrity, and a small network of architects and builders who trust me with their most significant projects.</p>
+                        <p>I live in a 1962 post-and-beam in Laurel Canyon with more design books than shelf space and a garden I'm slowly learning not to overwater.</p>
+                    </div>
+                    <ul class="about__credentials reveal">
+                        <li class="about__credential">
+                            <span class="about__credential-value">12 Years</span>
+                            <span class="about__credential-label">Experience</span>
+                        </li>
+                        <li class="about__credential">
+                            <span class="about__credential-value">$180M+</span>
+                            <span class="about__credential-label">Career Sales</span>
+                        </li>
+                        <li class="about__credential">
+                            <span class="about__credential-value">94%</span>
+                            <span class="about__credential-label">Referral Rate</span>
+                        </li>
+                    </ul>
+                    <div class="about__cta reveal">
+                        <a href="#contact" class="btn btn--secondary">Let's Talk</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact" aria-labelledby="contact-heading">
+            <div class="contact__inner container">
+                <header class="contact__header">
+                    <span class="section-label reveal">Contact</span>
+                    <h2 id="contact-heading" class="contact__heading reveal">Start a Conversation</h2>
+                    <p class="contact__intro reveal">Whether you're ready to begin your search, considering selling, or simply curious about the market—I'd love to hear from you.</p>
+                </header>
+                
+                <div class="contact__grid">
+                    <div class="contact__info reveal">
+                        <div class="contact__method">
+                            <h3 class="contact__method-title">Phone</h3>
+                            <a href="tel:+15551234567" class="contact__method-link">+1 (555) 123-4567</a>
+                            <p class="contact__method-note">Available 9am–6pm, or leave a message anytime</p>
+                        </div>
+                        <div class="contact__method">
+                            <h3 class="contact__method-title">Email</h3>
+                            <a href="/cdn-cgi/l/email-protection#84e1e8e1eae5c4e1e8e1eae5f2e5eae7e1aae7ebe9" class="contact__method-link"><span class="__cf_email__" data-cfemail="3d585158535c7d585158535c4b5c535e58135e5250">[email&#160;protected]</span></a>
+                            <p class="contact__method-note">I respond within 24 hours</p>
+                        </div>
+                        <div class="contact__method">
+                            <h3 class="contact__method-title">Office</h3>
+                            <address class="contact__method-address">
+                                142 Valley Oak Lane<br>
+                                Ashford Valley, CA 94123
+                            </address>
+                            <p class="contact__method-note">By appointment</p>
+                        </div>
+                    </div>
+                    
+                    <form class="contact__form reveal" id="contact-form" action="php/contact.php" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name" class="form-label">Name</label>
+                                <input 
+                                    type="text" 
+                                    id="contact-name" 
+                                    name="name" 
+                                    class="form-input" 
+                                    required
+                                    autocomplete="name"
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email" class="form-label">Email</label>
+                                <input 
+                                    type="email" 
+                                    id="contact-email" 
+                                    name="email" 
+                                    class="form-input" 
+                                    required
+                                    autocomplete="email"
+                                >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-phone" class="form-label">Phone <span class="form-optional">(optional)</span></label>
+                            <input 
+                                type="tel" 
+                                id="contact-phone" 
+                                name="phone" 
+                                class="form-input"
+                                autocomplete="tel"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-interest" class="form-label">I'm interested in</label>
+                            <select id="contact-interest" name="interest" class="form-select" required>
+                                <option value="" disabled selected>Select one</option>
+                                <option value="buying">Buying a home</option>
+                                <option value="selling">Selling my home</option>
+                                <option value="valuation">Home valuation</option>
+                                <option value="general">General inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message" class="form-label">Message</label>
+                            <textarea 
+                                id="contact-message" 
+                                name="message" 
+                                class="form-textarea" 
+                                rows="5"
+                                placeholder="Tell me a bit about what you're looking for..."
+                            ></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__inner container">
+            <div class="footer__brand">
+                <span class="footer__logo">Elena Vance</span>
+                <p class="footer__tagline">Architecture, meet life.</p>
+            </div>
+            
+            <nav class="footer__nav" aria-label="Footer navigation">
+                <ul class="footer__nav-list">
+                    <li><a href="#properties" class="footer__nav-link">Properties</a></li>
+                    <li><a href="#approach" class="footer__nav-link">Approach</a></li>
+                    <li><a href="#ashford-valley" class="footer__nav-link">Ashford Valley</a></li>
+                    <li><a href="#about" class="footer__nav-link">About</a></li>
+                    <li><a href="#contact" class="footer__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="footer__social">
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                    <svg class="footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="2" width="20" height="20" rx="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="18" cy="6" r="1.5" fill="currentColor" stroke="none"/>
+                    </svg>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                    <svg class="footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="2" width="20" height="20" rx="3"/>
+                        <path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 1 1 4 0v4M11 10v7"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="footer__legal">
+                <p class="footer__brokerage">Elena Vance · Licensed Real Estate Professional · DRE #01234567</p>
+                <p class="footer__brokerage">Ashford Valley Realty · 142 Valley Oak Lane · Ashford Valley, CA 94123</p>
+                <p class="footer__copyright">© <span id="copyright-year">2026</span> Elena Vance. All rights reserved.</p>
+                <nav class="footer__legal-nav" aria-label="Legal links">
+                    <a href="#" class="footer__legal-link">Privacy Policy</a>
+                    <a href="#" class="footer__legal-link">Fair Housing</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Property Modal -->
+    <div class="modal" id="property-modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__container">
+            <button class="modal__close" aria-label="Close modal" data-close-modal>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 6l12 12M6 18L18 6"
