@@ -39,37 +39,32 @@
     // ============================================
     
     const Loader = {
-        el: $('.loader'),
+        el: null,
         
         init() {
-            if (!this.el) return;
+            this.el = $('.loader');
             
-            const hideLoader = () => {
-                setTimeout(() => {
-                    this.el.classList.add('is-hidden');
-                    document.body.classList.remove('scroll-locked');
-                    
-                    // Remove from DOM after transition
-                    setTimeout(() => {
-                        this.el.remove();
-                    }, 500);
-                }, 600);
-            };
-            
-            // Hide loader when page is ready
-            if (document.readyState === 'complete') {
-                // Already loaded
-                hideLoader();
-            } else {
-                // Wait for load, but with a safety timeout
-                window.addEventListener('load', hideLoader);
-                
-                // Fallback: hide after 3 seconds max regardless
-                setTimeout(hideLoader, 3000);
+            // If no loader element, just make sure body isn't locked
+            if (!this.el) {
+                document.body.classList.remove('scroll-locked');
+                return;
             }
             
-            // Lock scroll while loading
-            document.body.classList.add('scroll-locked');
+            const hideLoader = () => {
+                if (!this.el) return;
+                this.el.classList.add('is-hidden');
+                document.body.classList.remove('scroll-locked');
+                
+                // Remove from DOM after transition
+                setTimeout(() => {
+                    if (this.el && this.el.parentNode) {
+                        this.el.remove();
+                    }
+                }, 500);
+            };
+            
+            // Always hide after a short delay - don't wait for load event
+            setTimeout(hideLoader, 800);
         }
     };
 
